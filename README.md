@@ -1,23 +1,21 @@
 This repository contains the code used in the experiments for the following paper:
 
-R. Morel, A. Cropper and L. Ong. Typed meta-interpretive learning of logic programs.
+A. Cropper, R. Morel, and S. H. Muggleton - [Learning higher-order logic programs](http://andrewcropper.com/pubs/mlj19-metaho.pdf) - Machine learning 
 
-# data description
+# Stucture of the exprimental code
 
-For each experiment, the experimental data are in the folders marked by the date they were run on. The folders suffixed '-results' contain the outputs of the system.
-The csv files prefixed by 'data-typed' contain the data collection for the typed experiments,
-likewise for the 'data-untyped' files for the untyped runs of the experiments.
-The '.table' files contain means and standard deviations. These files were generated from the csv files by the 'raw-data-to-plot-data.py' script.
+The paper contains four experiments, corresponding to the four folders in this repo.
+Each folder for an experiment contains the subfolders `data`, `programs` and `results`, which contain the experimental data used for the paper.
+The `runner.py` file was used to generete this data.
+The `data` subfolder contains the examples used to learn from as well as the testing data.
+The `programs` subfolder contains the programs learned by the different algorithms.
+The `results` subfolder contains the outcome for running the learned programs on the testing data.
 
 # Rerunning the experiments
 
-Each subfolder in the experiments directory contains a 'run.bash' script which runs the respective experiment. The ASP experiments are in the sub-folders named 'asp'.
+Each subfolder in the experiments directory contains a 'runner.py' script which runs the respective experiment. Upon running this script to completion some statistics on average accuracy and running times will be printed. The `runner.py` files contain a number of parameters that can be set, e.g. to only run experiment for Prolog or just with ASP. 
 
 To run the Prolog experiments a Prolog interpreter is needed. As the experiments were run on 'SWI-Prolog', this is recommended interpreter.
 The ASP experiments require the [hexlite](https://github.com/hexhex/hexlite) ASP solver.
 
-Contact rolf.morel@cs.ox.ac.uk with any queries.
-
-# Online appendix for HEXMIL<sub>T</sub> encoding 
-
-The file `appendix-HEXMIL_T-encoding.tx` contains the full encoding for typed HEXMIL.
+Contact andrew.cropper@cs.ox.ac.uk with any queries.
