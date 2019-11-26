@@ -53,7 +53,6 @@ def hexlite_caller(cmd,asp_timeout,size=0, skolems=0):
 
 def call_asp(load_files,plugin,output):
     timeout=60*10
-    timeout=60  ### FIXME
     max_clauses=100000
     cmdprefix = "hexlite --flpcheck=none -n=1 --pluginpath . --plugin " + plugin + " -- " + ' '.join(load_files)
     start = time.time()

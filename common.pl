@@ -35,8 +35,7 @@ timeit(Goal):-
 metagol:max_clauses(10).
 %% max_time(60). % 1 minute
 %% max_time(120). % 2 minutes
-%max_time(600). % 10 minutes
-max_time(60). % 1 minutes  %%% FIXME
+max_time(600). % 10 minutes
 
 %% METARULES
 metarule(monadic,[P,Q],([P,A,A]:-[[Q,A]])).
