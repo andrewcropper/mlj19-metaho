@@ -1,0 +1,2 @@
+pos_ex(f,"1,5,coffee-down-empty,tea-down-empty,tea-down-empty,coffee-down-empty","5,5,coffee-up-coffee,tea-up-tea,tea-up-tea,coffee-up-coffee").
+neg_ex(f,"1,5,tea-down-empty,coffee-down-empty,coffee-down-empty,coffee-down-empty","5,5,tea-down-empty,coffee-up-coffee,coffee-up-coffee,coffee-up-tea").

@@ -1,0 +1,12 @@
+.DS_Store
+*.pdf
+*.aux
+*.log
+*.gz
+*.blg
+*.bbl
+*.swp
+*.fdb_latexmk
+*.fls
+_minted-*
+*pyc

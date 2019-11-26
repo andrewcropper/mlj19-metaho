@@ -1,0 +1,2 @@
+pos_ex(s(1,6,[p(1,coffee,down,empty),p(2,tea,down,empty),p(3,tea,down,empty),p(4,tea,down,empty),p(5,coffee,down,empty)]),s(6,6,[p(1,coffee,up,coffee),p(2,tea,up,tea),p(3,tea,up,tea),p(4,tea,up,tea),p(5,coffee,up,coffee)])).
+neg_ex(s(1,7,[p(1,coffee,down,empty),p(2,coffee,down,empty),p(3,coffee,down,empty),p(4,coffee,down,empty),p(5,tea,down,empty),p(6,tea,down,empty)]),s(7,7,[p(1,coffee,up,coffee),p(2,coffee,down,empty),p(3,coffee,up,tea),p(4,coffee,up,coffee),p(5,tea,up,coffee),p(6,tea,up,tea)])).
